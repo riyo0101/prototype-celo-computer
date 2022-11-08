@@ -909,7 +909,13 @@ Categories & Collections Style
   text-align: center;
 }
 
-
+.categories-collections {
+  background-image: url(/images/Background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
 
 .section-heading h2 {
   color: var(--primary-color);

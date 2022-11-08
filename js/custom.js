@@ -1,58 +1,22 @@
 (function ($) {
   "use strict";
-  $(".owl-men-item").owlCarousel({
-    items: 5,
+  $(".owl-collection").owlCarousel({
+    items: 4,
     loop: true,
-    dots: true,
+    dots: false,
     nav: true,
+    autoplay: true,
     margin: 30,
     responsive: {
       0: {
         items: 1,
       },
-      600: {
-        items: 2,
+      800: {
+        items: 3,
+        margin: 25,
       },
       1000: {
-        items: 3,
-      },
-    },
-  });
-
-  $(".owl-women-item").owlCarousel({
-    items: 5,
-    loop: true,
-    dots: true,
-    nav: true,
-    margin: 30,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
-
-  $(".owl-kid-item").owlCarousel({
-    items: 5,
-    loop: true,
-    dots: true,
-    nav: true,
-    margin: 30,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
+        items: 4,
       },
     },
   });
@@ -195,10 +159,10 @@
   });
 
   // CUSTOM LINK
-  $(".smoothscroll").click(function () {
+  $(".custom-link").click(function () {
     var el = $(this).attr("href");
     var elWrapped = $(el);
-    var header_height = $(".navbar").height();
+    var header_height = $(".navbar").height() + 10;
 
     scrollToDiv(elWrapped, header_height);
     return false;
